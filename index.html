@@ -13,11 +13,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap"
         rel="stylesheet">
+
     <style>
         .font_lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
+
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- customize color -->
     <script>
         tailwind.config = {
@@ -26,6 +33,7 @@
                     colors: {
                         clifford: '#da373d',
                     }
+
                 }
             }
         }
@@ -33,7 +41,64 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="md:container md:mx-auto">
+
+
+        <!-- navbar section -->
+        <nav>
+            <div class="navbar  navbar rounded-full  bg-[#F85559]">
+                <div class="navbar-start ">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-xl shadow bg-base-100 rounded-box w-52">
+                            <li><a>HOME</a></li>
+                            <li><a>ABOUT US</a></li>
+                            <li><a>SHOP</a></li>
+                            <li><a>ALL FRUIT</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="navbar-center mr-96 lg:flex">
+                    <ul class="menu menu-horizontal hidden lg:flex px-1">
+                        <li><a>HOME</a></li>
+                        <li><a>ABOUT US</a></li>
+                        <li><a>SHOP</a></li>
+                        <li><a>ALL FRUIT</a></li>
+                    </ul>
+                    <div class="ml-28">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="ml-4 text-[#FFF] text-xl font-bold ">FRUIT BRUST</h1>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="flex-none rounded-full gap-2">
+                    <div class="form-control hidden lg:flex  mr-10">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+
+                    </div>
+                    <div>
+                        <h1><i class="fa-solid fa-magnifying-glass -ml-24"></i></h1>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
     <main></main>
     <footer></footer>
 </body>
